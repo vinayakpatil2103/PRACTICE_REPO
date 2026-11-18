@@ -1,35 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.interview_preparation;
-
-/**
- *
- * @author VINAYAK PATIL
- */
-
 abstract class Shape{
     abstract void draw();
 }
-class circle extends Shape{
+ class Square extends Shape{
     void draw(){
-        System.out.println("cirlce drawing.......");
+        System.out.println("Drawing Square !!");
     }
 }
-class rectangle extends Shape{
+class Circle extends Shape{
     void draw(){
-        System.out.println("Rectangle drawing.....");
+        System.out.println("Drawing Circle !!");
     }
 }
 
 public class Abstraction {
-    public static void main(String []agrs){
-        Shape s=new circle();
-        Shape s2=new rectangle();
-        s2.draw();
+    public static void main(String[] args) {
+        Shape s=new Square();
         s.draw();
-        
+        Shape s2=new Circle();
+        s2.draw();
     }
-    
 }
